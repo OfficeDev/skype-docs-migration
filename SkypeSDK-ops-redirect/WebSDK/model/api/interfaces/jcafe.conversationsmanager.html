@@ -1,0 +1,463 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ConversationsManager | Skype for Business Web SDK API Reference</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Skype for Business Web SDK API Reference</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/jcafe.html">jCafe</a>
+				</li>
+				<li>
+					<a href="jcafe.conversationsmanager.html">ConversationsManager</a>
+				</li>
+			</ul>
+			<h1>Interface ConversationsManager</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">ConversationsManager</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jcafe.conversationsmanager.html#conversations" class="tsd-kind-icon">conversations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jcafe.conversationsmanager.html#ishistoryenabled" class="tsd-kind-icon">is<wbr>History<wbr>Enabled</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="jcafe.conversationsmanager.html#createconversation" class="tsd-kind-icon">create<wbr>Conversation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="jcafe.conversationsmanager.html#createmeeting" class="tsd-kind-icon">create<wbr>Meeting</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="jcafe.conversationsmanager.html#createsearchquery" class="tsd-kind-icon">create<wbr>Search<wbr>Query</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="jcafe.conversationsmanager.html#getconversation" class="tsd-kind-icon">get<wbr>Conversation</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="jcafe.conversationsmanager.html#getconversationbyuri" class="tsd-kind-icon">get<wbr>Conversation<wbr>ByUri</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="conversations" class="tsd-anchor"></a>
+					<h3>conversations</h3>
+					<div class="tsd-signature tsd-kind-icon">conversations<span class="tsd-signature-symbol">:</span> <a href="jcafe.collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:395</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Here is a correct way to accept incoming IM invitations:</p>
+						</div>
+						<pre><code><span class="hljs-component">client.conversationsManager.conversations.added(conversation =&gt; {
+    var chat = conversation<span class="hljs-string">.chatService</span>;
+    if (chat<span class="hljs-string">.accept.enabled())</span>
+        chat<span class="hljs-string">.accept()</span>;
+}</span>);
+</code></pre><p>The only way to remove a conversation from the collection is
+							to invoke the <code>remove</code> method which stops the conversation and
+						then removes it from the collection:</p>
+						<pre><code><span class="hljs-keyword">var</span> cv = client.conversationsManager.conversations(5);
+client.conversationsManager.conversations.remove(cv).catch(<span class="hljs-keyword">err</span> =&gt; {
+    console.<span class="hljs-literal">log</span>(<span class="hljs-string">"Failed to remove the conversation: "</span> + <span class="hljs-keyword">err</span>);
+});
+</code></pre><p>If the conversation gets stopped because it was terminated on the remote
+							side or because all participants left, the conversation
+						object stays in the collection, but its state changes to &quot;Disconnected&quot;.</p>
+						<p>To remove all conversations that get disconnected, use the following
+						pattern:</p>
+						<pre><code>client.conversationsManager.conversations.added(cv =&gt; {
+    cv.<span class="hljs-keyword">state</span>.<span class="hljs-keyword">once</span>('Disconnected', () =&gt; {
+        client.conversationsManager.conversations.remove(cv);
+    });
+});
+</code></pre>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="ishistoryenabled" class="tsd-anchor"></a>
+					<h3>is<wbr>History<wbr>Enabled</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>History<wbr>Enabled<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Property&lt;boolean&gt; &amp; { auto: Property&lt;boolean&gt;; }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:2053</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Reflects the current state on ucwa regarding whether history is enabled.
+								isHistoryEnabled can only be changed once the sdk is connected to the server and
+								when rel=communication has an etag value.
+							Once enabled, if set to false it disables history on ucwa and stops ucwa from auto accepting IMs.</p>
+						</div>
+						<p>Set isHistoryEnabled.auto to false after creating the app and before signing in if the app
+						does not want the sdk to automatically enable conversation history.</p>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="createconversation" class="tsd-anchor"></a>
+					<h3>create<wbr>Conversation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Conversation<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in s4b.sdk.d.ts:429</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Creates a new multiparty conversation model.</p>
+								</div>
+								<p>The created conversation model represents a new multiparty
+									conversation (meeting).
+									To start the conversation add participants (optionally) and start
+									one of the conversation services. If no participants are added,
+									the model represents a meeting that is joined by the local participant only.
+								This method adds the created conversation to the conversations collection.</p>
+								<pre><code>var conversation = app.conversationsManager.createConversation();
+var remoteParty = conversation.createParticipant(remotePerson);
+conversation.participants.add(remoteParty);
+conversation.chatService.start().<span class="hljs-keyword">then</span>(<span class="hljs-function"><span class="hljs-params">()</span> =&gt;</span> {
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"chat started"</span>);
+});
+</code></pre>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="createmeeting" class="tsd-anchor"></a>
+					<h3>create<wbr>Meeting</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Meeting<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="jcafe.scheduledmeeting.html" class="tsd-signature-type">ScheduledMeeting</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in s4b.sdk.d.ts:2042</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Schedules a meeting, but doesn&#39;t join it.
+									To join ameeting, one can use getConversationByUri.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="jcafe.scheduledmeeting.html" class="tsd-signature-type">ScheduledMeeting</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="createsearchquery" class="tsd-anchor"></a>
+					<h3>create<wbr>Search<wbr>Query</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">create<wbr>Search<wbr>Query<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="jcafe.searchquery.html" class="tsd-signature-type">SearchQuery</a><span class="tsd-signature-symbol">&lt;</span><a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in s4b.sdk.d.ts:409</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>To search for conversations create the search query, set search
+									terms on the query object and execute the query&#39;s search method.</p>
+								</div>
+								<p>var searchQuery = client.conversationsManager.createSearchQuery();
+									searchQuery.text(&quot;scrum planning&quot;);
+									searchQuery.keywords[&#39;participant&#39;] = &#39;frank&#39;;
+									searchQuery.getMore().then(() =&gt; {
+									searchQuery.results().forEach((r) =&gt; {
+									console.log(&quot;conversation  uri:&quot;, r.result.id());
+									});
+								});</p>
+							</div>
+							<h4 class="tsd-returns-title">Returns <a href="jcafe.searchquery.html" class="tsd-signature-type">SearchQuery</a><span class="tsd-signature-symbol">&lt;</span><a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getconversation" class="tsd-anchor"></a>
+					<h3>get<wbr>Conversation</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Conversation<span class="tsd-signature-symbol">(</span>person<span class="tsd-signature-symbol">: </span><a href="jcafe.person.html" class="tsd-signature-type">Person</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Conversation<span class="tsd-signature-symbol">(</span>sipUri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in s4b.sdk.d.ts:442</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds an existing 1:1 conversation model or creates a new one.</p>
+								</div>
+								<p>This method finds or creates a conversation with a given Person.
+									Our API allows multiple 1:1 conversations with the same person,
+									so while looking for an existing conversation we simply pick the
+									first one found among such ongoing conversations. We ignore
+									disconnected (ended) conversations that may still linger in the
+									conversations collection. This method adds the newly created
+								conversation to the conversations collection.</p>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>person: <a href="jcafe.person.html" class="tsd-signature-type">Person</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in s4b.sdk.d.ts:2036</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>This method finds or creates a conversation with a given SIP URI.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>sipUri: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
+					<a name="getconversationbyuri" class="tsd-anchor"></a>
+					<h3>get<wbr>Conversation<wbr>ByUri</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Conversation<wbr>ByUri<span class="tsd-signature-symbol">(</span>uri<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in s4b.sdk.d.ts:456</li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Finds an existing multiparty conversation model or creates a new one.</p>
+								</div>
+								<p>A conversation uri has a meaning only for a multiparty conversation</p>
+								<ul>
+									<li>it is a meeting uri.
+										A conversation model with such a uri represents the client&#39;s view
+										of this meeting. Note that initially such a model is just an empty
+										conversation model which has a non-null uri property; the client joins
+										the meeting only when one of the conversation services is started.
+										This method adds the newly created conversation to the conversations
+									collection.</li>
+								</ul>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>uri: <span class="tsd-signature-type">string</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="jcafe.conversation.html" class="tsd-signature-type">Conversation</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/jcafe.html">j<wbr>Cafe</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="jcafe.conversationsmanager.html" class="tsd-kind-icon">Conversations<wbr>Manager</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jcafe.conversationsmanager.html#conversations" class="tsd-kind-icon">conversations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jcafe.conversationsmanager.html#ishistoryenabled" class="tsd-kind-icon">is<wbr>History<wbr>Enabled</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="jcafe.conversationsmanager.html#createconversation" class="tsd-kind-icon">create<wbr>Conversation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="jcafe.conversationsmanager.html#createmeeting" class="tsd-kind-icon">create<wbr>Meeting</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="jcafe.conversationsmanager.html#createsearchquery" class="tsd-kind-icon">create<wbr>Search<wbr>Query</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="jcafe.conversationsmanager.html#getconversation" class="tsd-kind-icon">get<wbr>Conversation</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-interface">
+								<a href="jcafe.conversationsmanager.html#getconversationbyuri" class="tsd-kind-icon">get<wbr>Conversation<wbr>ByUri</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

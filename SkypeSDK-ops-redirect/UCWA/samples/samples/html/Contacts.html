@@ -1,0 +1,44 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Contacts</h1>
+<p>Contacts provide access to current contact data such as name, email, sip, presence, note, image, supported media, and relationship.  Contacts also provides to href's that offer regular messaging and audio/video messaging.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js (psuedo-namespacing/null and undefined checks)</li>
+    <li>Transport.js</li>
+    <li>Batch.js</li>
+</ul>
+
+<h2>Tasks</h2>
+<ul id="tasks">
+</ul>
+
+<h2 class="task">Get a Single Contact</h2>
+<p>The first step to getting a single contact is to present a list of available contacts to choose from.  Each entry in the select list contains the href to the contact's resource.  When one contact is a selected and a single contact is retrieved a request on the corresponding href will be made.  The returned result contains current contact data and this sample is interested in name, email, presence, note, relation, and image.  The image is interesting because it when tied to the src attribute of an img tag will cause a request to be sent, but in this case the request would not have a supplied credentials except for the fact that during the Authentication process a Http-only cookie is set.  This cookie is in turn used during this request (assuming the contact has set an image).  The resulting contact data is templated into a display seen below the action buttons.</p>
+<div class="controls">
+    <a id="getSingleContacts">Get Contacts</a>
+</div>
+<div class="controls">
+    <select id="singleContactsList"></select>
+</div>
+<div class="controls">
+    <a id="getSingleContact" class="idleAnchor">Get Single Contact</a>
+</div>
+<div id="singleContact"></div>
+<div id="codeSnippet1"></div>
+
+<h2 class="task">Get Contacts</h2>
+<p>Get contacts is similar to the previous task in that it needs to retrieve the contact's href, but instead of allowing a single selection of a contact it makes use of batching in order to retrieve all contacts.  Batching is a complex concept where messages are queued for sending and when the Transport library receives either a processBatch call or exceeds the maximum batch size (20) it will send the request and notifying each queued message's callback function.  It is possible to queue messages with the same callback and only expect a single callback as the data received is the entire batch request and non-specific to the single request.  Batched request data needs to be processed by multi-part Mime parser that adheres to the RFC1341 Section 7.2 or for simplicity of the task it will use the Mime library.  The Mime library will return the data as a JSON object containing an array of parsed parts of the original message and an array of the raw parts.  This resulting data from the batch call will contain many instances of contact data that will be built up into an array and processed through a template for better display.</p>
+<div class="controls">
+    <a id="getContacts">Get Contacts</a>
+</div>
+<div id="contactList"></div>
+<div id="codeSnippet2"></div>
+
+<script type="text/javascript" src="samples/javascript/GetSingleContact.js"></script>
+<script type="text/javascript" src="samples/javascript/GetContacts.js"></script>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/javascript/GetSingleContact.js");
+    window.site.codifyElement($("#codeSnippet2"), "samples/javascript/GetContacts.js");
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

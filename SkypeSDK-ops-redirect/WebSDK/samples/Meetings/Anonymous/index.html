@@ -1,0 +1,81 @@
+<div class="step">
+    <div class="prereqs">
+        <h2>Prerequisites</h2>
+        <ol>
+            <li>Bootstrap Skype Web SDK</li>
+        </ol>
+    </div>
+    <div class="permissions">
+        <h2>Permissions</h2>
+        <p>For Skype for Business Online application, you will need the following permission(s):</p>
+        <ul>
+            <li>
+                <span>Initiate Real time conversations and join meetings</span>
+            </li>
+        </ul>
+    </div>
+    <div class="description">
+        <h3>Provide a conference URI to sign-in anonymously.</h3>
+        <p>After bootstrapping the Skype Web SDK we have access to an api object which exposes an application object.  If we create a new instance of an application we get access to a signInManager.  The signInManager provides us with a signIn(...) method that we can supply a version, name, and meeting URI to authenticate anonymously.  When signing in through this method the application is limited to joining that specific meeting and will not have access to other features such as presence and contact management.</p>
+    </div>
+    <div class="controls table">
+        <div class="table-row">
+            <div class="table-cell">
+                <label>Name</label>
+            </div>
+            <div class="table-cell">
+                <input type="text" class="username medium" placeholder="anonymous_user" data-enter-bind="signin">
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <label>Meeting URI</label>
+            </div>
+            <div class="table-cell">
+                <input class="uri medium" placeholder="sip:user@domain.com;gruu;opaque=app:conf:focus:id:........" data-enter-bind="signin">
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <div class="button signin">Sign-in</div>
+            </div>
+        </div>
+    </div>
+    <div class="snippet"></div>
+</div>
+<div class="step">
+    <div class="prereqs">
+        <h2>Prerequisites</h2>
+        <ol>
+            <li>Sign-In</li>
+            <li>Conversation created</li>
+        </ol>
+    </div>
+    <div class="description">
+        <h3>Click to join the meeting.</h3>
+        <p>The application object exposes a conversationsManager object which we can use to get meeting conversations by calling getConversationByUri(...) and providing an online meeting URI.  After creation of the conversation object, it is helpful to setup a few event listeners for added participants and when we disconnect from the conversation.  In this example we demonstrate connecting to video so we also need to know when we are connected to video as well as any added participants.<p>
+    </div>
+    <div class="controls">
+        <div class="button join">Join</div>
+    </div>
+    <div class="snippet"></div>
+</div>
+<div class="step">
+    <div class="prereqs">
+        <h2>Prerequisites</h2>
+        <ol>
+            <li>Video connected</li>
+        </ol>
+    </div>
+    <div class="description">
+        <h3>Send and receive video.</h3>
+        <p>After the conversation and video modality are established we can begin communicating with the remote parties.  When finished click the end button to terminate the conversation.</p>
+    </div>
+    <div class="controls">
+        <div class="videoContainer"></div>
+    </div>
+    <div class="controls">
+        <div class="button end">End</div>
+    </div>
+    <div class="snippet"></div>
+</div>

@@ -1,0 +1,343 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>VideoChannel | Skype for Business Web SDK API Reference</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Skype for Business Web SDK API Reference</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/jcafe.html">jCafe</a>
+				</li>
+				<li>
+					<a href="jcafe.videochannel.html">VideoChannel</a>
+				</li>
+			</ul>
+			<h1>Interface VideoChannel</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Participant&#39;s video channel</p>
+					</div>
+					<p>The video channel represents a single video connection. For a local
+						participant it holds a video stream from one of the attached cameras.
+					For a remote participant it holds one of the remote video streams.</p>
+					<p>Source property of the MediaStream interface is implementation-specific</p>
+					<ul>
+						<li>see the comment for MediaStreamSource. For a plugin-based implementation
+							it holds a StreamSink which represents a an HTML element that would host
+						the native window created by the plugin to render the video stream.</li>
+					</ul>
+					<p>Example:</p>
+					<p>Show video of participant A in <div id="renderWindow">:</p>
+					<pre><code>pA.video.channels(<span class="hljs-number">0</span>).stream.source.sink.<span class="hljs-keyword">container</span>(
+     document.getElementById(<span class="hljs-string">'renderWindow'</span>));
+pA.video.channels(<span class="hljs-number">0</span>).isStarted(<span class="hljs-keyword">true</span>);
+</code></pre><p>Replace participant A&#39;s video with participant B&#39;s video:</p>
+					<pre><code>pB.video.channels(<span class="hljs-number">0</span>).isStarted(<span class="hljs-keyword">true</span>);
+pA.video.channels(<span class="hljs-number">0</span>).stream.source.sink.<span class="hljs-keyword">container</span>(<span class="hljs-keyword">null</span>);
+pB.video.channels(<span class="hljs-number">0</span>).stream.source.sink.<span class="hljs-keyword">container</span>(
+     document.getElementById(<span class="hljs-string">'renderWindow'</span>));
+pA.video.channels(<span class="hljs-number">0</span>).isStarted(<span class="hljs-keyword">false</span>);
+</code></pre>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">VideoChannel</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jcafe.videochannel.html#camera" class="tsd-kind-icon">camera</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jcafe.videochannel.html#isonhold" class="tsd-kind-icon">is<wbr>OnHold</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jcafe.videochannel.html#isstarted" class="tsd-kind-icon">is<wbr>Started</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jcafe.videochannel.html#isvideoon" class="tsd-kind-icon">is<wbr>Video<wbr>On</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jcafe.videochannel.html#stream" class="tsd-kind-icon">stream</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="camera" class="tsd-anchor"></a>
+					<h3>camera</h3>
+					<div class="tsd-signature tsd-kind-icon">camera<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1855</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A video device description for this channel.</p>
+						</div>
+						<p>Camera should provide a camera description that can be used
+						for channel identification in the UI.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isonhold" class="tsd-anchor"></a>
+					<h3>is<wbr>OnHold</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>OnHold<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1911</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set this property to hold/resume video on this channel for the local
+								participant. For a remote participant this property is read-only and
+							is true when the remote participant is holding video on this channel.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isstarted" class="tsd-anchor"></a>
+					<h3>is<wbr>Started</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Started<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1886</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Set this property to start/stop streaming video on this video channel.</p>
+						</div>
+						<p>Setting this property to true for the local participant starts video
+							on this channel. This property is read-only for a remote participant
+							in 1:1 conversation. For a remote participant in a multiparty
+							conversation setting this property to true does not start this
+							participant&#39;s video remotely, it just tells the conference that the
+							local participant wants to see (subscribe to) the remote participant&#39;s
+							video. Similarly, setting it to false does not stop this participant&#39;s
+							video remotely, it just tells the conference that the local
+						participant wants to unsubscribe from the remote participant&#39;s video.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isvideoon" class="tsd-anchor"></a>
+					<h3>is<wbr>Video<wbr>On</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Video<wbr>On<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1905</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The value of this property indicates whether or not a participant is
+							attempting to stream video.</p>
+						</div>
+						<p>It may be used in gallery view during group calls to decide which
+						remote participant can be promoted to stage because they have video.</p>
+						<p>For a remote participant in a 1:1 call it indicates that the remote
+							party has turned on video, but not necessarily that we are rendering the
+							video. For instance, if the remote turns on video but we have not set
+							a container for her video stream, no video will be rendered but this
+							property will be true. The same is true for the local participant in
+						both 1:1 and group calls.</p>
+						<p>This is a read-only property.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="stream" class="tsd-anchor"></a>
+					<h3>stream</h3>
+					<div class="tsd-signature tsd-kind-icon">stream<span class="tsd-signature-symbol">:</span> <a href="jcafe.mediastream.html" class="tsd-signature-type">MediaStream</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1871</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Participant&#39;s video stream.</p>
+						</div>
+						<p>In a plugin-based implementation a media stream may be started by the
+							Start method of this interface but the media packets will start
+							flowing only after at least one sink (rendering window) is added to
+							MediaSource. The app can detect the media flow start by observing the
+							stream state. That state is Active when the media starts to flow and
+							becomes Inactive when media stops (which happens when there are no
+							rendering windows). The app may elect to display the participant&#39;s
+							photo instead of their video until the stream state becomes Active
+							rather than Started, otherwise a user may see a dark window during
+						the stream transion from Started to Inactive to Active.</p>
+					</div>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/jcafe.html">j<wbr>Cafe</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="jcafe.videochannel.html" class="tsd-kind-icon">Video<wbr>Channel</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jcafe.videochannel.html#camera" class="tsd-kind-icon">camera</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jcafe.videochannel.html#isonhold" class="tsd-kind-icon">is<wbr>OnHold</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jcafe.videochannel.html#isstarted" class="tsd-kind-icon">is<wbr>Started</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jcafe.videochannel.html#isvideoon" class="tsd-kind-icon">is<wbr>Video<wbr>On</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jcafe.videochannel.html#stream" class="tsd-kind-icon">stream</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

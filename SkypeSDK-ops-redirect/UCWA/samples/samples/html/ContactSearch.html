@@ -1,0 +1,28 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Contact Search</h1>
+<p>Contact search is a simple task that utilizes the Cache and Transport libraries to requests a set of contacts based on a search value and limit.  The resulting contacts will be limited if necessary or in cases where a search provides no results only link to search will be provided.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>Cache.js</li>
+    <li>Transport.js</li>
+</ul>
+
+<h2>Tasks</h2>
+<ul id="tasks">
+</ul>
+
+<h2 class="task">Search for Contacts</h2>
+<p>Searching for contacts is a trivial task: use the Transport library to make a cross-domain request using a link stored inside the Cache library and provide a search value, limit, and callback to handle the result.  Depending on the result (200 with found contacts), the adjacent div will be populated with contacts (limited to 3 results).  Limiting the number of returned results can be controlled via a query string parameter seen in the sample code: "&limit=3".</p>
+<div class="controls">
+    <input data-enterBinding="searchContacts" id="contactSearchValue" />
+    <a id="searchContacts" class="anchorButton">Search Contacts</a>
+</div>
+<div id="searchedContactsList"></div>
+<div id="codeSnippet1"></div>
+
+<script type="text/javascript" src="samples/Javascript/ContactSearch.js"></script>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/Javascript/ContactSearch.js");
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

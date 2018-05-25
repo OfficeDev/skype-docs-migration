@@ -1,0 +1,11 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "/platformservice/v1/applications"
+    },
+    "ms:rtc:saas:application": {
+      "href": "/platformservice/v1/applications/1393347000?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+    }
+  },
+  "rel": "ms:rtc:saas:applications"
+}

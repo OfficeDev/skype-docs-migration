@@ -1,0 +1,20 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>AutoDiscovery</h1>
+<p>AutoDiscovery is a behind the scenes programmatic task for discovering the correct location of the AutoDiscover service based on the provided sign-in address. Lync's AutoDiscovery process is well-defined, and begins with a request to https://lyncdiscoverinternal.domain (followed by https://lyncdiscover.domain), where domain is taken from the sign-in address.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js</li>
+    <li>Transport.js</li>
+</ul>
+
+<h2>Usage</h2>
+<p>In order to use the AutoDiscovery library a Transport will need to be properly constructed. The Transport libary requires the target domain for requests in order to correctly route messages. Technically that is all that is needed to construct the Transport library, but to faciliate cross-domain messaging the AutoDiscovery library will add an iframe to the DOM through the process of AutoDiscovery. AutoDiscovery begins with the startDiscovery(...) method which requires a domain, container, and callback. The domain is based on the sign-in address and will eventually lead to the user's home server. The container is a DOM element that will hold an iframe that will be dynamically injected into the DOM. This iframe is used exclusively by the Transport library to make cross-domain calls. The supplied callback will receive the a link to the AutoDiscovery Service root.</p>
+<div id="codeSnippet1"></div>
+
+<div id="module"></div>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/Javascript/AutoDiscoveryUsage.js");
+    window.site.codifyElement($("#module"), "scripts/AutoDiscovery.js", true);
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

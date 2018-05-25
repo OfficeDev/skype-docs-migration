@@ -1,0 +1,8 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "/platformservice/v1/applications"
+    }
+  },
+  "rel": "ms:rtc:saas:applications"
+}

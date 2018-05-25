@@ -1,0 +1,120 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/events?ack=1&key=1393347000%7Esip%3Amonitoringaudio%400mcorp2cloudperf.onmicrosoft.com%7E0d5d91ec-5eaf-402e-95a9-6f09a2787ad5"
+    },
+    "next": {
+      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/events?ack=2&key=1393347000%7Esip%3Amonitoringaudio%400mcorp2cloudperf.onmicrosoft.com%7E0d5d91ec-5eaf-402e-95a9-6f09a2787ad5"
+    }
+  },
+  "sender": [
+    {
+      "rel": "ms:rtc:saas:communication",
+      "href": "/platformservice/v1/applications/1393347000/communication/id/3f96f5b2-9369-4b5e-b26c-5bc79caa05a6?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com",
+      "events": [
+        {
+          "link": {
+            "rel": "ms:rtc:saas:audioVideoInvitation",
+            "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/audioVideoInvitations/3f96f5b2-9369-4b5e-b26c-5bc79caa05a6?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+          },
+          "_embedded": {
+            "ms:rtc:saas:audioVideoInvitation": {
+              "direction": "Incoming",
+              "state": "Connecting",
+              "operationId": "652d9d53-f067-4935-a3bc-2fcb0576a407",
+              "importance": "Normal",
+              "threadId": "667df23e17f04f53b1445789a03acc9f",
+              "subject": "",
+              "to": "sip:+12068004732@0mcorp2cloudperf.onmicrosoft.com;user=phone",
+              "_links": {
+                "self": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/audioVideoInvitations/3f96f5b2-9369-4b5e-b26c-5bc79caa05a6?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:conversation": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/0d5d91ec-5eaf-402e-95a9-6f09a2787ad5?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:audioVideo": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/0d5d91ec-5eaf-402e-95a9-6f09a2787ad5/audioVideo?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                }
+              },
+              "_embedded": {
+                "ms:rtc:saas:application": {
+                  "_links": {
+                    "self": {
+                      "href": "/platformservice/v1/applications/1393347000?endpointId=sip%3amonitoringaudio%400mcorp2cloudperf.onmicrosoft.com"
+                    },
+                    "ms:rtc:saas:anonApplicationTokens": {
+                      "href": "/platformservice/v1/applications/1393347000/anonApplicationTokens?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                    }
+                  },
+                  "_embedded": {
+                    "ms:rtc:saas:communication": {
+                      "_links": {
+                        "self": {
+                          "href": "/platformservice/v1/applications/1393347000/communication?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                        },
+                        "ms:rtc:saas:joinOnlineMeeting": {
+                          "href": "/platformservice/v1/applications/1393347000/communication/onlineMeetingInvitations?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                        },
+                        "ms:rtc:saas:inviteUserToMeeting": {
+                          "href": "/platformservice/v1/applications/1393347000/communication/userMeetingInvitations?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                        },
+                        "ms:rtc:saas:startMessagingWithIdentity": {
+                          "href": "/platformservice/v1/applications/1393347000/communication/messagingInvitations?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                        },
+                        "ms:rtc:saas:startAudioVideo": {
+                          "href": "/platformservice/v1/applications/1393347000/communication/audioVideoInvitations?modalities=AudioVideo&endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                        },
+                        "ms:rtc:saas:startAudio": {
+                          "href": "/platformservice/v1/applications/1393347000/communication/audioVideoInvitations?modalities=Audio&endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                        },
+                        "ms:rtc:saas:startApplicationSharing": {
+                          "href": "/platformservice/v1/applications/1393347000/communication/applicationSharingInvitations?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                        }
+                      },
+                      "rel": "ms:rtc:saas:communication",
+                      "etag": "4294967295"
+                    },
+                    "myOnlineMeetings": {
+                      "_links": {
+                        "self": {
+                          "href": "/platformservice/v1/applications/1393347000/myOnlineMeetings?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                        }
+                      },
+                      "rel": "myOnlineMeetings"
+                    },
+                    "ms:rtc:saas:adhocMeetings": {
+                      "_links": {
+                        "self": {
+                          "href": "/platformservice/v1/applications/1393347000/adhocMeetings?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                        }
+                      },
+                      "rel": "ms:rtc:saas:adhocMeetings"
+                    }
+                  },
+                  "rel": "ms:rtc:saas:application"
+                },
+                "ms:rtc:saas:from": {
+                  "uri": "tel:+14254996692",
+                  "name": "Kumar,Sandeep",
+                  "_links": {
+                    "self": {
+                      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/0d5d91ec-5eaf-402e-95a9-6f09a2787ad5/participants/tel:+14254996692?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                    },
+                    "ms:rtc:saas:conversation": {
+                      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/0d5d91ec-5eaf-402e-95a9-6f09a2787ad5?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                    }
+                  },
+                  "rel": "ms:rtc:saas:participant"
+                }
+              },
+              "rel": "ms:rtc:saas:audioVideoInvitation"
+            }
+          },
+          "type": "started"
+        }
+      ]
+    }
+  ],
+  "baseuri": "https://webpoolbl20r4.infra.lync.com"
+}

@@ -1,0 +1,57 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Instant Messaging</h1>
+<p>Instant Messaging involves conversation that are either started by Ucwa or inbound and each requires slightly different handling.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js (psuedo-namespacing/null and undefined checks)</li>
+    <li>Cache.js</li>
+    <li>Transport.js</li>
+    <li>OperationResource.js</li>
+</ul>
+
+<h2>Tasks</h2>
+<ul id="tasks">
+</ul>
+
+<h2 class="task">Outgoing Conversation</h2>
+<p>Outgoing Conversations are started by Ucwa and typically involve at least one person although more can be added.  Initially this task needed to load up the user's contact list into a select list.  After choosing a contact and selecting "Start Outgoing" a request to startMessaging with the selected contact will begin.  The required data: importance, sessionContext, subject, telemetryId, and to will be packaged into a request which will give the contact an invitation to start messaging.  If the contact declines the conversation ends immediately. If the contact accepts it is now possible to add additional participants and send messages. Much of the work of scanning event channel data is handled by the Operation Resource tracking the messaging href and looking for messages related to this conversation or an indication that this conversation has ended.  Finding messages related to this conversation involves digging into the event channel data and looking for a content id and matching it to any related resource data that came across.  When this data matches it means the message is specific to this conversation and it usually includes a way to determine which contact sent the message.  As messages come in a message area will fill with user names, time stamps, messsages.  The user may select another contact from the list and choose to add a participant which would transition this meeting from a conversation into a conference.  The user may choose to send a message and this will cause any contacts currently in the conversation to receive it.</p>
+<div class="controls">
+    <select id="outgoingContacts"></select>
+</div>
+<div class="controls">
+    <a id="startOutgoing" class="anchorButton idleAnchor">Start Outgoing</a>
+    <a id="stopOutgoing" class="anchorButton idleAnchor">Stop Outgoing</a>
+    <a id="addOutgoing" class="anchorButton idleAnchor">Add Participant</a>
+</div>
+<div class="controls">
+    <input data-enterBinding="sendOutgoing" id="imMessageOutgoing" />
+    <a id="sendOutgoing" class="anchorButton idleAnchor">Send Message</a>
+    <ul id="imOutgoing" class="messages"></ul>
+</div>
+<div id="codeSnippet1"></div>
+
+<h2 class="task">Incoming Conversation</h2>
+<p>Incoming Conversations  are started by Ucwa and typically involve at least one person although more can be added.  Initially this task needed to load up the user's contact list into a select list. Incoming conversation relies on the ability of the OperationResource to track all incoming data ("*") and when the event channel data comes in it is interested in messagingInvitations and onlineMeetingInvitations.  Both invitation types present the user with a popup dialog with contact name, message (if available), and photo (if available).  This popup can be declined meaning user will not join or accept which begins the conversation.  Online meetings require an additional step to enable messaging by looking for a messaging event with a "Disconnected" state (after accepting) and making a request on the startMessaging resource.  After the user is in a conversation it is possible to add more participants and send messages.  Similar to outgoing conversations as messages are received they will be populated into an area below with contact name, time stamp, and message.</p>
+<div class="controls">
+    <select id="incomingContacts"></select>
+</div>
+<div class="controls">
+    <a id="startIncoming" class="anchorButton">Start Incoming</a>
+    <a id="stopIncoming" class="anchorButton idleAnchor">Stop Incoming</a>
+    <a id="addIncoming" class="anchorButton idleAnchor">Add Participant</a>
+</div>
+<div class="controls">
+    <input data-enterBinding="sendIncoming" id="imMessageIncoming" />
+    <a id="sendIncoming" class="anchorButton idleAnchor">Send Message</a>
+    <ul id="imIncoming" class="messages"></ul>
+</div>
+<div id="codeSnippet2"></div>
+
+<script type="text/javascript" src="samples/javascript/OutgoingConversation.js"></script>
+<script type="text/javascript" src="samples/javascript/IncomingConversation.js"></script>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/javascript/OutgoingConversation.js");
+    window.site.codifyElement($("#codeSnippet2"), "samples/javascript/IncomingConversation.js");
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

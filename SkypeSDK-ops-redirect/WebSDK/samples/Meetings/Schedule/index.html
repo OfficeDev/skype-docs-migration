@@ -1,0 +1,45 @@
+<div class="step">
+    <div class="prereqs">
+        <h2>Prerequisites</h2>
+        <ol>
+            <li>Bootstrap Skype Web SDK</li>
+            <li>Sign-In</li>
+        </ol>
+    </div>
+    <div class="permissions">
+        <h2>Permissions</h2>
+        <p>For Skype for Business Online application, you will need the following permission(s):</p>
+        <ul>
+            <li>
+                <span>Initiate Real time conversations and join meetings</span>
+            </li>
+        </ul>
+    </div>
+    <div class="description">
+        <h3>Provide a subject to create a meeting.</h3>
+        <p>The application object exposes a ConversationsManager object which we can use to create new meetings by calling createMeeting().  After creation of the meeting object we can set various properties that will effect the meeting options.  In this example we are interested in setting the meeting subject and making the access level available to everyone.  We can make these changes via the subject and accessLevel properties.  After we have made any changes to our meeting, we need to issue a one-time get() on the onlineMeetingUri property to trigger creation of the meeting on the server side.  Once that returns we will have access to the onlineMeetingUri, which we can use to join the meeting via another sample, and joinUrl, which we can provide to Skype for Business desktop client users to join the meeting.</p>
+    </div>
+    <div class="controls">
+        <input type="text" class="subject" placeholder="meeting subject" data-enter-bind="schedule">
+        <div class="button schedule">Schedule</div>
+    </div>
+    <div class="controls table">
+        <div class="table-row">
+            <div class="table-cell">
+                <label>Online Meeting Uri:</label>
+            </div>
+            <div class="table-cell">
+                <input type="text" class="onlineMeetingUri" readonly="true" placeholder="sip:user@domain.com;gruu;opaque=app:conf:focus:id:........">
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <label>Join Url:</label>
+            </div>
+            <div class="table-cell">
+                <input type="text" class="joinUrl" readonly="true" placeholder="https://meet.domain.com/user/........">
+            </div>
+        </div>
+    </div>
+    <div class="snippet"></div>
+</div>

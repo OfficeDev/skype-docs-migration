@@ -1,0 +1,24 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Authentication</h1>
+<p>Authentication is a behind-the-scenes programmatic response to a challenge from the API during AutoDiscovery. Depending on the type of authentication supported by the server, the module will use the provided credentials or allow a popup where credentials can be provided. </p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js</li>
+    <li>Cache.js</li>
+    <li>Transport.js</li>
+</ul>
+
+<h2>Usage</h2>
+<p>In order to use the Authentication library a Cache and Transport will need to be properly constructed. Additionally, AutoDiscovery should already be underway as the module expects to respond to the challenge encountered during AutoDiscovery. Once created it is possible to start the Authentication process by calling start(...) and optionally providing a callback that notifies the success or failure of the login attempt with a variable indicating online status and the data object resulting from the last executed request.</p>
+<div id="codeSnippet1"></div>
+
+<h2>Additional Usage</h2>
+<p>The Authentication library also provides methods to set user credentials, change status to online or offline, destroy the current UCWA application, and check online status.  Setting user credentials via setCredentials(...) enables the Authentication library to provide UCWA with user name and password in the Authentication process and possibly bypass the need to present a user with a login dialog. Using makeMeAvailable(...) makes a request to UCWA to make the user available for communication in the current application. Destroying an application via destroyApplication(...) will notify the API that the current application is no longer valid; future requests to any resources associated with this application will result in 404 responses. The final method, isAuthenticated(...) returns the current authentication status of the UCWA application.</p>
+<div id="codeSnippet2"></div>
+<div id="module"></div>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/Javascript/AuthenticationUsage.js");
+    window.site.codifyElement($("#codeSnippet2"), "samples/Javascript/AuthenticationAddUsage.js");
+    window.site.codifyElement($("#module"), "scripts/Authentication.js", true);
+</script>

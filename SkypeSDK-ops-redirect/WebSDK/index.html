@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Samples Framework</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="local.css" />
+    <link rel="import" href="lib/zero-md/build/zero-md.html" />
+    <link rel="stylesheet" type="text/css" href="node_modules/muicss/dist/css/mui.min.css" />
+    <link rel="stylesheet" text="css" href="node_modules/font-awesome/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="header">
+        <img src="images/samples/skype-developer-logo.png">
+    </div>
+    <!-- content_body -->
+    <div class="sidebar"></div>
+    <div class="center-content">
+        <div class="landing">
+            <h2>Welcome to the Skype Web SDK Interactive Samples</h2>
+            <p class="before-signin">To get started, select an authentication option on the left.</p>
+            <p class="after-signin">
+                <span class="fa fa-check-square" aria-hidden="true" style="font-size:15px;color:#03A43E;"></span> You've successfully
+                signed in. You can now play with any of the interactive samples from the sidebar.
+            </p>
+        </div>
+        <div class="azuread-signin">
+            <p>
+                <span class="fa fa-circle-o-notch fa-spin fa-3x fa-fw"></span>
+                <text></text>
+            </p>
+        </div>
+        <div class="content"></div>
+    </div>
+    <script type="text/javascript" src="samples/config.js"></script>
+    <script type="text/javascript" src="samples/location_config.js"></script>
+    <script type="text/javascript" src="//swx.cdn.skype.com/shared/v/1.2.30/SkypeBootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/webcomponentsjs/webcomponents-lite.js"></script>
+    <script type="text/javascript" src="node_modules/muicss/dist/js/mui.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="samples/utils/video-utils.js"></script>
+    <!-- end_content_body -->
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="PlatformServiceNotificationCenter" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="FrontEnd">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <!-- You should not need to modify these under normal circumstances -->
+      <Setting name="AAD_MetadataUri" value="https://login.windows.net/common/FederationMetadata/2007-06/FederationMetadata.xml" />
+      <Setting name="AAD_AuthorityUri" value="https://login.windows.net" />
+      <Setting name="SkypeForBusinessApplicationId" value="00000004-0000-0ff1-ce00-000000000000" />
+      <Setting name="PlatformDiscoverUri" value="https://NOAMmeetings.resources.lync.com/platformservice/discover?deploymentpreference=Nightly" />
+      <Setting name="PlatformAudienceUri" value="https://NOAMmeetings.resources.lync.com" />
+      <!-- Replace base.url with your app's url; as registered on Azure -->
+      <!--This is optional. only needed if you want to leverage the AzureDiagnosticLogger which log all traces in azure diagnostic storage table
+      if you have other storage to store your trace, this is not needed. -->
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString"
+               value="DefaultEndpointsProtocol=..." />
+            <!--this is needed if you are using QueueBasedEventChannel in this sample -->
+      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=..." />
+      <Setting name="AudienceUri" value="https://base.url" />
+      <Setting name="CallbackUriFormat" value="https://base.url/callback?callbackContext={0}" />
+      <Setting name="ResourcesUriFormat" value="https://base.url/resources/{0}" />
+      <!-- Replace these with values relevant to your deployment -->
+      <Setting name="AAD_ClientId" value="GUID" />
+      <Setting name="AAD_ClientSecret" value="Secret key" />      
+      <Setting name="ApplicationEndpointId" value="Sip address" />
+      <Setting name="LogFullHttpRequestResponse" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <!-- After uploading them, the Azure Portal will list thumbprints for your Cloud Service's certificates -->
+      <!--this cert is for SSL of your callback endpoint-->
+      <Certificate name="HttpsCert" thumbprint="9BE9A2662A815AF1A3E7A1D2BD85A40122499B5A" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

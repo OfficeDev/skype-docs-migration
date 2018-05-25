@@ -1,47 +1,24 @@
 {
   "build": {
-    "content": [
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**",
-          "README.md",
-          "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
-        ]
-      }
-    ],
+    "content":
+      [
+        {
+          "files": ["**/**.md"],
+          "exclude": ["**/obj/**", "WebSDK/LICENSE.md", "WebSDK/README.md","AppSDK/readme.md"]
+        }
+      ],
     "resource": [
-      {
-        "files": [
-          "**/*.png",
-          "**/*.jpg"
-        ],
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**",
-          "_themes/**",
-          "_themes.pdf/**"
-        ]
-      }
+        {
+          "files": ["**/images/**"],
+          "exclude": ["**/obj/**"]
+        }
     ],
-    "overwrite": [],
-    "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/skype/breadcrumb/toc.json",
-      "extendBreadcrumb": true,
-      "feedback_system": "None"
+        "ROBOTS": "INDEX, FOLLOW"
     },
-    "fileMetadata": {},
-    "template": [],
-    "dest": "SkypeSDK-ops-redirect",
-    "markdownEngineName": "markdig"
+    "externalReference": [
+    ],
+    "template": "op.html",
+    "dest": "Skype"
   }
 }
