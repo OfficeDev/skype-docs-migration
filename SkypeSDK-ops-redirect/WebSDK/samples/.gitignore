@@ -1,5 +1,0 @@
-# ignore generated files
-*.js
-
-#ignore copied file
-config.js
