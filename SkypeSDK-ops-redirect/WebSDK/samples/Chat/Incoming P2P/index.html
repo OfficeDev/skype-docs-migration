@@ -1,0 +1,39 @@
+<div class="step">
+    <div class="mui-container-fluid">
+        <div class="mui-row">
+            <div class="mui-col-md-8">
+                <zero-md file="">
+                    <div class="md-html"></div>
+                </zero-md>
+            </div>
+            <div class="mui-col-md-4">
+                <div class="mui--text-display2">Preview</div>
+                <br/>
+                <div class="mui-panel mui--z3">
+                    <div id="step1" style="display:block">
+                        <button class="mui-btn mui-btn--raised mui-btn--primary add">Start Listening</button>
+                    </div>
+                    <div id="step2" style="display:none">
+                        <div class="mui-textfield">
+                            <input type="text" class="messageToSend" placeholder="hello world" data-enter-bind="send">
+                            <label>Message</label>
+                        </div>
+                        <div style="display: inline-block">
+                            <button class="mui-btn mui-btn--raised mui-btn--primary send">Send</button>
+                            <button class="mui-btn mui-btn--raised mui-btn--danger end">End Chat</button>
+                        </div>
+                    </div>
+                    <div id="step3" class="step4" style="display: none">
+                        <button class="mui-btn mui-btn--raised mui-btn--accent restart">Restart Sample</button>
+                    </div>
+                    <div class="notification-bar">
+                        <br/> <div class="mui--text-subhead"><b>Events Timeline</b></div> <br/>
+                    </div>
+                    <div class="mui-divider"></div> <br/>
+                    <div id="bimessages" class="mui--text-subhead" style="display:none"><b>Incoming & Outgoing Messages</b></div> <br/>
+                    <div class="messages"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

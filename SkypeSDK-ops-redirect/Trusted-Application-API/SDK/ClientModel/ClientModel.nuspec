@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Microsoft.SkypeforBusiness.TrustedApplicationAPI.SDK</id>
+    <version>1.0.0$version_suffix$</version>
+    <authors>Microsoft</authors>
+    <owners>microsoft,nugetsfbplatform</owners>
+    <projectUrl>https://github.com/OfficeDev/skype-docs/tree/master/Skype/Trusted-Application-API/SDK</projectUrl>
+    <licenseUrl>https://go.microsoft.com/fwlink/?linkid=841900</licenseUrl>
+    <iconUrl>https://secure.gravatar.com/avatar/92bd0991c2311c528ada0fa90fdd1719?s=64</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Skype for Business Trusted Application SDK</description>
+    <summary>
+      Software Development Kit (SDK) for development of Trusted Applications for Skype for Business. The SDK is built on the Trusted Application 
+      API, a Rest API that enables developers to build Skype for Business Online back-end communications services for the cloud.
+    </summary>
+    <releaseNotes>Please visit https://go.microsoft.com/fwlink/?linkid=841901 to view the release notes.</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>Microsoft SfB SkypeforBusiness TrustedApplicationAPI</tags>
+    <dependencies>
+      <!-- 4.1.0 and 4.1.1 has a bug -->
+      <dependency id="System.Net.Http" version="[4.0,4.1)" />
+    </dependencies>
+  </metadata>
+</package>

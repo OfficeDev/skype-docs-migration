@@ -1,0 +1,29 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "/platformservice/v1/applications/1393347000?endpointId=sip%3amonitoringaudio%400mcorp2cloudperf.onmicrosoft.com"
+    },
+    "ms:rtc:saas:anonApplicationTokens": {
+      "href": "/platformservice/v1/applications/1393347000/anonApplicationTokens?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+    }
+  },
+  "_embedded": {
+    "myOnlineMeetings": {
+      "_links": {
+        "self": {
+          "href": "/platformservice/v1/applications/1393347000/myOnlineMeetings?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        }
+      },
+      "rel": "myOnlineMeetings"
+    },
+    "ms:rtc:saas:adhocMeetings": {
+      "_links": {
+        "self": {
+          "href": "/platformservice/v1/applications/1393347000/adhocMeetings?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        }
+      },
+      "rel": "ms:rtc:saas:adhocMeetings"
+    }
+  },
+  "rel": "ms:rtc:saas:application"
+}

@@ -1,0 +1,9 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "/eventsservice"
+    }
+  },
+  "sender": [],
+  "baseuri": "https://webpoolbl20r04.infra.lync.com/platformservice/v1/applications"
+}

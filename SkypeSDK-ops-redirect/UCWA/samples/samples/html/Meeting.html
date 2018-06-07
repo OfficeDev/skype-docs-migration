@@ -1,0 +1,51 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Schedule a Meeting</h1>
+<p>Scheduling a Meeting involves selecting participants and setting meeting parameters with the end result being a joinable meeting.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js (psuedo-namespacing/null and undefined checks)</li>
+    <li>Cache.js</li>
+    <li>Transport.js</li>
+    <li>Batch.js</li>
+</ul>
+
+<h2>Tasks</h2>
+<ul id="tasks">
+</ul>
+
+<h2 class="task">Schedule a Meeting</h2>
+<p>The meeting task initially needs a list of contacts loaded up to allow choice of meeting participants.  After load it is possible to fill in meeting parameters such as: subject, description, announement status, and choose participants.  At this point a meeting can be scheduled with this data making a request to online meetings and providing the data.  When a meeting is successfully created it can be joined be following a meeting url found in the response data.  This is simulated by opening a new window with the meeting url.  Update meeting changes the subject and title of the meeting and it is expected that any unchanged meeting data be replayed in the request to change the meeting otherwise it is consider removed.  Finally, it is also possible to end a meeting by issuing a delete on the meeting link</p>
+<div class="controls">
+    <h3>Subject: </h3>
+    <br/>
+    <input id="subject" />
+</div>
+<div class="controls">
+    <h3>Description: </h3>
+    <br/>
+    <input id="description" />
+</div>
+<div class="controls">
+    <h3>Announcement Status: </h3>
+    <br/>
+    <input type="checkbox" id="announcementStatus" />
+</div>
+<div class="controls">
+    <select id="contactList" multiple="multiple"></select>
+</div>
+<div class="controls">
+    <a id="scheduleMeeting" class="anchorButton">Schedule Meeting</a>
+    <a id="joinMeeting" class="anchorButton idleAnchor">Join Meeting</a>
+    <a id="updateMeeting" class="anchorButton idleAnchor">Update Meeting</a>
+    <a id="deleteMeeting" class="anchorButton idleAnchor">Delete Meeting</a>
+</div>
+<div class="controls">
+    <h3 id="meetingUri"></h3>
+</div>
+<div id="codeSnippet1"></div>
+<script type="text/javascript" src="samples/javascript/ScheduleMeeting.js"></script>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/javascript/ScheduleMeeting.js");
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

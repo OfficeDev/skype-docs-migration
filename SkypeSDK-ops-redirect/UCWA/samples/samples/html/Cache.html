@@ -1,0 +1,26 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Cache</h1>
+<p>Cache is a simple library that utilizes a storage object to store data for use by other libraries or components.</p>
+
+<h2>Dependencies</h2>
+<ul>
+  <li>GeneralHelper.js</li>
+  <li>MemoryStorage.js</li>
+</ul>
+
+<h2>Usage</h2>
+<p>The Cache library is relatively standalone and can utilize user-created storage objects to store data. MemoryStorage is used as a default storage object when the object supplied to the constructor does not implement all required methods (init, create, read, update, delete). All Cache methods return a promise object to enable deferred processing of operations. Cache wraps the underlying storage object's methods exposing init, create, read, update, and delate.  When receiving the callback/promise result from data access methods create/update/delete will receive the id and read the data.</p>
+<div id="codeSnippet1"></div>
+<div id="module1"></div>
+
+<h2>Storage Objects</h2>
+<p>Storage objects implementing core methods (init, create, read, update, delete) can be used by the Cache. Each method is expected to return a promise object to allowed deferred processing. These methods are centered around data (what is being created/updated), id (identifier for the data), and callback (optional). Two implementations of a storage object have been provided with MemoryStorage (in-memory) and LocalStorage (HTML5's localStorage).</p>
+<div id="module2"></div>
+<div id="module3"></div>
+<script type="text/javascript">
+  window.site.codifyElement($("#codeSnippet1"), "samples/Javascript/CacheUsage.js");
+  window.site.codifyElement($("#module1"), "scripts/Cache.js", true);
+  window.site.codifyElement($("#module2"), "scripts/MemoryStorage.js", true);
+  window.site.codifyElement($("#module3"), "scripts/LocalStorage.js", true);
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

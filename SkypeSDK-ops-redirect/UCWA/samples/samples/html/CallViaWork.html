@@ -1,0 +1,36 @@
+<p>Call Via Work involves providing a phone number and contact to connect them via P2P call.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js (psuedo-namespacing/null and undefined checks)</li>
+    <li>Cache.js</li>
+    <li>Transport.js</li>
+</ul>
+
+<h2>Tasks</h2>
+<ul id="tasks">
+</ul>
+
+<h2 class="task">Call Via Work</h2>
+<p>Call Via Work is fairly straightforward, determine the outgoing contact, determine the phone number to call, and make a request on startPhoneAudio.  In the case of this sample the outgoing contact is set to sip:CallViaWorkBot@gotuc.net (userToCall variable).  If your Lync Server is not configured for Federation you will run into issues placing the call, but it is possible to modify the sample (CallViaWork.js) userToCall to point to a contact in the Lync domain.  The sample also makes use of a regex expression to filter phoneNumberRegex) the phone number used in the request to support the following forms:</p>
+    <ul>
+        <li>+1xxxxxxxxxx - +1 followed by 10 digits</li>
+        <li>tel:+1xxxxxxxxxx - tel:+1 followed by 10 digits</li>
+        <li>xxxxxxxxxx - 10 digits</li>
+    </ul>
+
+</p>This limits calling to US numbers, but could be modified to support any calling restrictions.</p>
+<div class="controls">
+    <h3>Phone Number: </h3>
+    <br/>
+    <input id="phoneNumber" data-enterBinding="call" />
+</div>
+<div class="controls">
+    <a id="call" class="anchorButton">Call</a>
+</div>
+<div id="codeSnippet1"></div>
+<script type="text/javascript" src="samples/javascript/CallViaWork.js"></script>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/javascript/CallViaWork.js");
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

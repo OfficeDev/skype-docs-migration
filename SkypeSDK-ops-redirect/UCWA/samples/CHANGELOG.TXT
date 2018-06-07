@@ -1,0 +1,28 @@
+## UCWA March 2014 Samples
+* Add Call Via Work sample [works in sandbox only] (site)
+* Add Anonymous Meeting Join sample (site)
+* Add timer query parameters and method to update values (Events.js)
+* 
+* Add method to parse header string into JSON-like object (GeneralHelper.js)
+* Change Cache to provide interface for implementations and updates to support deferred access (Cache.js)
+* Add in-memory storage and localStorage implementations of new Cache interface (MemoryStorage.js/LocalStorage.js)
+* Remove isDefined(...) usage (All)
+* Add method for default value fallback (GeneralHelper.js)
+* Updating frameInjection to wait for injection prior to executing callback (Transport.js)
+
+## UCWA May 2013 Samples
+* Make internal methods actually internal using the facade pattern (All)
+* Add generic logging and try/catch handlers to protect code callbacks (All)
+* Implement anonymous conference join (Authentication.js)
+* URL encode user name and password (Authentication.js)
+* New frame injection logic to handle frame load failures (Transport.js)
+* Documentation updates and spelling/typo fixes (All)
+* Fix naming issue for Apache users (Index.html)
+* Fixed issue with parsing complex FQDNs (Transport.js) with new method extractOriginFromAbsoluteUrl (GeneralHelper.js)
+* Basic JS Lint fixes (All)
+* Default color for subscribed contacts (group/ad-hoc) is rgb(182,207,216) [Presence Unknown] (AdHocSubscription.js/GroupSubscription.js)
+* Fix glitch in presence subscriptions for contacts with "." in name (AdHocSubscription.js/GroupSubscription.js)
+* Cache presence values that occur prior to the UI render (AdHocSubscription.js/GroupSubscription.js)
+
+## UCWA February 2013 Samples
+* Initial Release

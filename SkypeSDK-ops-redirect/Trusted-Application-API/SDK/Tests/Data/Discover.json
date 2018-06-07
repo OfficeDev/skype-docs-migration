@@ -1,0 +1,14 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "https://noammeetings.resources.lync.com:4443/platformservice/discover?deploymentpreference=Weekly"
+    },
+    "ms:rtc:saas:applications": {
+      "href": "https://ring2noammeetings.resources.lync.com/platformservice/v1/applications"
+    },
+    "myApplications": {
+      "href": "https://ring2noammeetings.resources.lync.com/platformservice/v1/myApplications"
+    }
+  },
+  "rel": "ms:rtc:saas:discover"
+}

@@ -1,0 +1,18 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Mime</h1>
+<p>Mime is a simple library that processes messages that adhere to RFC 2046 regarding multipart content type for HTTP requests. Mime parsing is directly used by the Batch library.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js</li>
+</ul>
+
+<h2>Usage</h2>
+<p>The Mime library is standalone and does not directly require any extra data or objects to construct an instance. The Mime library can take a single optional parameter that will be used as a fall back boundary when parsing the multi-part messages if it is unable to find the boundary in the header. The Mime library processes data via processMessage(...) which takes a single data object with properties headers and responseText. This type of data object is retrieved by using the Transport library's requesting methods. The resulting data object will be an array of familiar objects returned from Transport library requests containing: status, statusText, responseText, results (when responseText is JSON), header, and messageId.</p>
+<div id="codeSnippet1"></div>
+<div id="module"></div>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/Javascript/MimeUsage.js");
+    window.site.codifyElement($("#module"), "scripts/Mime.js", true);
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

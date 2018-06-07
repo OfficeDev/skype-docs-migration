@@ -1,0 +1,50 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "/platformservice/v1/applications/1393347000?endpointId=sip%3amonitoringaudio%400mcorp2cloudperf.onmicrosoft.com"
+    }
+  },
+  "_embedded": {
+    "ms:rtc:saas:communication": {
+      "_links": {
+        "self": {
+          "href": "/platformservice/v1/applications/1393347000/communication?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        },
+        "ms:rtc:saas:joinOnlineMeeting": {
+          "href": "/platformservice/v1/applications/1393347000/communication/onlineMeetingInvitations?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        },
+        "ms:rtc:saas:inviteUserToMeeting": {
+          "href": "/platformservice/v1/applications/1393347000/communication/userMeetingInvitations?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        },
+        "ms:rtc:saas:startMessagingWithIdentity": {
+          "href": "/platformservice/v1/applications/1393347000/communication/messagingInvitations?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        },
+        "ms:rtc:saas:startAudioVideo": {
+          "href": "/platformservice/v1/applications/1393347000/communication/audioVideoInvitations?modalities=AudioVideo&endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        },
+        "ms:rtc:saas:startAudio": {
+          "href": "/platformservice/v1/applications/1393347000/communication/audioVideoInvitations?modalities=Audio&endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        }
+      },
+      "rel": "ms:rtc:saas:communication",
+      "etag": "4294967295"
+    },
+    "myOnlineMeetings": {
+      "_links": {
+        "self": {
+          "href": "/platformservice/v1/applications/1393347000/myOnlineMeetings?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        }
+      },
+      "rel": "myOnlineMeetings"
+    },
+    "ms:rtc:saas:adhocMeetings": {
+      "_links": {
+        "self": {
+          "href": "/platformservice/v1/applications/1393347000/adhocMeetings?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+        }
+      },
+      "rel": "ms:rtc:saas:adhocMeetings"
+    }
+  },
+  "rel": "ms:rtc:saas:application"
+}
