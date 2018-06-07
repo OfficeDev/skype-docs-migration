@@ -1,0 +1,25 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Operation Resource</h1>
+<p>Operation Resource is a library that wraps the Event and Transport libraries to handle the tasks required for UCWA operation resources. These tasks are:</p>
+<ol>
+    <li>Creating an operation ID</li>
+    <li>Registering handlers with the Event modile for the operation ID in #1</li>
+    <li>Issuing a request via Transport with the operation ID from #1</li>
+</ol>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js</li>
+    <li>Transport.js</li>
+    <li>Events.js</li>
+</ul>
+
+<h2>Usage</h2>
+<p>The Operation Resource libary provides a single method for starting an operation: startOperation(...). This method takes a request object, just like the one expected in Transport, comprised of: url, verb, acceptType, contentType, data, callback, etc. It also takes a handler object, like the one in Event, comprised of one or more event handlers. It performs the steps described above before returning the operation ID generated in step 1. It is possible to stop an operation via stopOperation(...) which takes the resulting Id from a startOperation(...) call removing the event handlers.</p>
+<div id="codeSnippet1"></div>
+<div id="module"></div>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/Javascript/OperationResourceUsage.js");
+    window.site.codifyElement($("#module"), "scripts/OperationResource.js", true);
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

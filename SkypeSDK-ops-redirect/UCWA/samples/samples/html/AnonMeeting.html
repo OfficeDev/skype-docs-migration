@@ -1,0 +1,45 @@
+<p>Anonymous Meeting involves providing a meeting link (onlineMeetingUri) and display name to join a meeting as a guest.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js</li>
+    <li>AutoDisovery.js</li>
+    <li>Authentication.js</li>
+    <li>Cache.js</li>
+    <li>Transport.js</li>
+    <li>Events.js</li>
+</ul>
+
+<h2>Tasks</h2>
+<ul id="tasks">
+</ul>
+
+<h2 class="task">Anonymous Meeting</h2>
+<p>Anonymous Meeting join will create a UCWA Application and anonymously join a meeting based on supplied data (Conference URI).  Once the application is authenticated it is time to wire up event listeners for message (incoming messages), messaging (gather messaging hrefs), and participant (know who is participating in the meeting).  After wiring up the event listeners it is possible to start the event channel and make a request to join the online meeting.</p>
+<p>The first important event is messaging in a state of Disconnected which will allow making a request to addMessaging which will enable the ability to send messages and leave the meeting. The participant events will allow tracking of who is in the meeting and will be used as a lookup for who recently sent a message to cut down on requests for contact data. The messaging events will contain information about who sent the message and the contents.</p>
+<div class="controls">
+    <h3>Online Meeting Uri</h3>
+    <br/ >
+    <input id="onlineMeetingUri" />
+</div>
+<div class="controls">
+    <h3>Display Name (Limit 250)</h3>
+    <br/ >
+    <input id="displayName" maxlength="250" />
+</div>
+<div class="controls">
+    <a id="joinMeeting" class="anchorButton">Join Meeting</a>
+</div>
+<div class="controls">
+    <input data-enterBinding="sendMessage" id="message" />
+    <a id="sendMessage" class="anchorButton idleAnchor">Send Message</a>
+    <a id="leaveMeeting" class="anchorButton idleAnchor">Leave Meeting</a>
+    <ul id="meetingMessages" class="messages"></ul>
+</div>
+<div class="frame" id="anonContainer"></div>
+<div id="codeSnippet1"></div>
+<script type="text/javascript" src="samples/javascript/AnonMeeting.js"></script>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/javascript/AnonMeeting.js");
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

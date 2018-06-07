@@ -1,0 +1,23 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Transport</h1>
+<p>Transport is a behind the scenes interaction tasked with issuing requests to UCWA. Nearly all modules make use of it as it streamlines request generation and abstracts away the postMessage mechanism used for cross-domain communication.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>GeneralHelper.js</li>
+</ul>
+
+<h2>Usage</h2>
+<p>In order to construct the Transport library the target origin that all messages will technically originate from is needed. For the Transport library to correctly route messages it requires the contentWindow property of an iframe whose contents exist on the UCWA server domain and the absolute URL for the contents. These parameters are supplied via the setElement(...) method. The method setAuthorization(...) receives the full access token used to access authorized resources. Once these credentials are provided this information will be provided automatically by the Transport library on subsequent requests. These methods are used by the Authentication library as part of the Authentication process. The Transport Library also exposes setRequestCallbacks(...) that takes an object containing a start and stop callback to be used when requests have started and have stopped. The website uses this in coordination with an indicator icon to show busy states. The Transport library also exposes a method to inject an iframe into a container element via injectFrame(...). This method is used by AutoDiscovery to test out domains to find the final operating location. The method takes the domain where the iframe exists, a container for the iframe, and a callback to be executed when the iframe has finished loading.</p>
+<div id="codeSnippet1"></div>
+
+<h2>Additional Usage</h2>
+<p>The Transport library provides methods for sending a single request and a wrapper for postMessage(...). Sending a single message can be done via clientRequest(...) and providing an object containing: url, type (get, post, put, delete), data, accepts (the accept type expected in the response), contentType (the content type of the request body), and a callback. The callback will return with a data object respresenting the response as an object containing: status, statusText, responseText, headers, messageId, and results (if accept type was JSON). Many of these properties come directly from the XmlHttpRequest object. It should be noted that any of these messaging calls can be be read without callbacks by implementing an event handler for window.onmessage(...).</p>
+<div id="codeSnippet2"></div>
+<div id="module"></div>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/Javascript/TransportUsage.js");
+    window.site.codifyElement($("#codeSnippet2"), "samples/Javascript/TransportAddUsage.js");
+    window.site.codifyElement($("#module"), "scripts/Transport.js", true);
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

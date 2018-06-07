@@ -1,0 +1,44 @@
+<div class="step">
+    <div class="mui-container-fluid">
+        <div class="mui-row">
+            <div class="mui-col-md-8">
+                <zero-md file="">
+                    <div class="md-html"></div>
+                </zero-md>
+            </div>
+            <div class="mui-col-md-4">
+                <div class="mui--text-display2">Preview</div>
+                <br/>
+                <div class="mui-panel mui--z3">
+                    <div id="step1" class="step1" style="display:block">
+                        <div class="mui-textfield">
+                            <input type="text" class="sip1" placeholder="user@domain.com" data-enter-bind="search">
+                            <label>User 1</label>
+                        </div>
+                        <div class="mui-textfield">
+                            <input type="text" class="sip2" placeholder="user@domain.com (optional)" data-enter-bind="search">
+                            <label>User 2 (optional)</label>
+                        </div>
+                        <button class="mui-btn mui-btn--raised mui-btn--primary call">Create Control</button>
+                        <button class="mui-btn mui-btn--raised mui-btn--danger endAllConvs" style="display:none">End All Conversations</button>
+                        <br/>
+                        <!--<br/><div class="mui-divider"></div><br/>-->
+                        <!--<button class="mui-btn mui-btn--raised mui-btn--primary incoming">Start Listening</button>-->
+                    </div>
+                    <div id="step2" class="step2" style="display:none">
+                        <button class="mui-btn mui-btn--raised mui-btn--accent restart">Restart Sample</button>
+                    </div>
+                    <!--<div class="mui-divider"></div>-->
+                    <div id="conversationcontrol" class="mui--text-subhead" style="display:none"><b>Conversation Control(s)</b>
+                    </div> <br/>
+                    <div class="conversationContainer" style="height: 500px"></div>
+                    <div class="mui-divider"></div>
+                    <div class="notification-bar">
+                        <br/>
+                        <div class="mui--text-subhead"><b>Events Timeline</b></div> <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

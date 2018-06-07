@@ -1,0 +1,568 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>MePerson | Skype for Business Web SDK API Reference</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script src="../assets/js/modernizr.js"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">Skype for Business Web SDK API Reference</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="../modules/jcafe.html">jCafe</a>
+				</li>
+				<li>
+					<a href="jcafe.meperson.html">MePerson</a>
+				</li>
+			</ul>
+			<h1>Interface MePerson</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Represents the signed-in user.</p>
+					</div>
+					<p>Essentially, this object is a person object with the ability to change
+						certain properties. It must be noted that the user may be signed on
+						multiple endpoints and all these endpoints may be sending simultaneous
+						requests to change the online status, change the note text and so on.
+						The server aggregates these requests and notifies all the endpoints of
+					the aggregated user state change.</p>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<a href="jcafe.person.html" class="tsd-signature-type">Person</a>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">MePerson</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#activity" class="tsd-kind-icon">activity</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#avatarurl" class="tsd-kind-icon">avatar<wbr>Url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#capabilities" class="tsd-kind-icon">capabilities</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#company" class="tsd-kind-icon">company</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#department" class="tsd-kind-icon">department</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#displayname" class="tsd-kind-icon">display<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jcafe.meperson.html#email" class="tsd-kind-icon">email</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#emails" class="tsd-kind-icon">emails</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#endpointtype" class="tsd-kind-icon">endpoint<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#id" class="tsd-kind-icon">id</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#lastseenat" class="tsd-kind-icon">last<wbr>Seen<wbr>At</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#location" class="tsd-kind-icon">location</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#note" class="tsd-kind-icon">note</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#office" class="tsd-kind-icon">office</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#phonenumbers" class="tsd-kind-icon">phone<wbr>Numbers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#status" class="tsd-kind-icon">status</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-inherited"><a href="jcafe.meperson.html#title" class="tsd-kind-icon">title</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="activity" class="tsd-anchor"></a>
+					<h3>activity</h3>
+					<div class="tsd-signature tsd-kind-icon">activity<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#activity">activity</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1227</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The custom user-defined activity text augments the online status value.</p>
+						</div>
+						<p>It is encoded in UTF-16 and in the locale specified during application
+							creation. The value of this string is localized in the current
+							application&#39;s culture provided the localized string exists in the
+						contact&#39;s publication.</p>
+						<p>Otherwise, the value of this string is one of the well known activity
+							strings in which case the application is responsible for the
+						localization. The well known ones are:</p>
+						<p> &quot;in-a-meeting&quot;,              (user has an accepted meeting)
+							&quot;urgent-interruptions-only&quot;, (busy)
+							&quot;on-the-phone&quot;,              (speaking with one person)
+							&quot;in-a-conference&quot;,           (speaking with more than one person)
+							&quot;off-work&quot;,
+							&quot;out-of-office&quot;,
+						&quot;presenting&quot;.</p>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="avatarurl" class="tsd-anchor"></a>
+					<h3>avatar<wbr>Url</h3>
+					<div class="tsd-signature tsd-kind-icon">avatar<wbr>Url<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#avatarurl">avatarUrl</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1197</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>This may either be a remote URL to a PNG or a JPEG picture
+							or a data URL with embedded picture data.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="capabilities" class="tsd-anchor"></a>
+					<h3>capabilities</h3>
+					<div class="tsd-signature tsd-kind-icon">capabilities<span class="tsd-signature-symbol">:</span> <a href="jcafe.capabilities.html" class="tsd-signature-type">Capabilities</a></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#capabilities">capabilities</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1277</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Like note, the capabilities is not a property, but an object
+								containing the following sub-properties (all of which contain boolean
+								flags indicating whether the person is capable of communicating using
+							certain modalities):</p>
+						</div>
+						<pre><code> <span class="hljs-keyword">var</span> modalities = person.capabilities;
+ <span class="hljs-keyword">if</span> (!modalities.audio())
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"audio not supported"</span>);
+</code></pre><p>Since capabilities is not a property itself, it can not
+						be subscribed to; but its sub-properties can be subscribed to:</p>
+						<pre><code> <span class="hljs-regexp">//</span> get capabilities object
+ var modalities = person.capabilities;
+ <span class="hljs-regexp">//</span> subscribe to changes <span class="hljs-keyword">of</span> capabilities.audio
+ modalities.audio.subscribe();
+ modalities.audio.changed(<span class="hljs-function"><span class="hljs-params">(f)</span> =&gt;</span> {
+     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"audio modality is "</span> + f ?
+         <span class="hljs-string">'supported'</span> : <span class="hljs-string">'not supported'</span>);
+ });
+</code></pre>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="company" class="tsd-anchor"></a>
+					<h3>company</h3>
+					<div class="tsd-signature tsd-kind-icon">company<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#company">company</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1193</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="department" class="tsd-anchor"></a>
+					<h3>department</h3>
+					<div class="tsd-signature tsd-kind-icon">department<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#department">department</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1191</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="displayname" class="tsd-anchor"></a>
+					<h3>display<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">display<wbr>Name<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#displayname">displayName</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1185</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="email" class="tsd-anchor"></a>
+					<h3>email</h3>
+					<div class="tsd-signature tsd-kind-icon">email<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:2110</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Alias to the first email address in the emails collection.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="emails" class="tsd-anchor"></a>
+					<h3>emails</h3>
+					<div class="tsd-signature tsd-kind-icon">emails<span class="tsd-signature-symbol">:</span> <a href="jcafe.collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="jcafe.email.html" class="tsd-signature-type">Email</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#emails">emails</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1203</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>All email addresses.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="endpointtype" class="tsd-anchor"></a>
+					<h3>endpoint<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">endpoint<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules/jcafe.html#endpointtype" class="tsd-signature-type">EndpointType</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#endpointtype">endpointType</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1235</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The device type on which the contact has been the most active.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="id" class="tsd-anchor"></a>
+					<h3>id</h3>
+					<div class="tsd-signature tsd-kind-icon">id<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#id">id</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1183</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>SIP URI of this person. i.e. &quot;sip:johndoe@contoso.com&quot;</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="lastseenat" class="tsd-anchor"></a>
+					<h3>last<wbr>Seen<wbr>At</h3>
+					<div class="tsd-signature tsd-kind-icon">last<wbr>Seen<wbr>At<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Date</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#lastseenat">lastSeenAt</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1232</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>When the status is &#39;Away&#39; this indicates when the person was
+							last available</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="location" class="tsd-anchor"></a>
+					<h3>location</h3>
+					<div class="tsd-signature tsd-kind-icon">location<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Location &amp; { reset(): Promise&lt;void&gt;; }</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#location">location</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1253</li>
+							<li>Defined in s4b.sdk.d.ts:2126</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>var location = person.location(); // read the location
+								person.location.subscribe(); // subscribe to location changes
+								person.location.changed((location) =&gt; {
+								console.log(&quot;new location is &quot; + location);
+								});
+								Performing a reset on this tells the server to pick the most
+							appropriate value for location</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="note" class="tsd-anchor"></a>
+					<h3>note</h3>
+					<div class="tsd-signature tsd-kind-icon">note<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Note &amp; { reset(): Promise&lt;void&gt;; }</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#note">note</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1244</li>
+							<li>Defined in s4b.sdk.d.ts:2116</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>var note = person.note; // get the note object
+								note.text.subscribe(); // subscribe to changes of note.text
+								note.text.changed((t) =&gt; {
+								console.log(&quot;new note is &quot; + t);
+								});
+								Performing a reset on this tells the server to pick the most
+							appropriate value for note</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="office" class="tsd-anchor"></a>
+					<h3>office</h3>
+					<div class="tsd-signature tsd-kind-icon">office<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#office">office</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1189</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="phonenumbers" class="tsd-anchor"></a>
+					<h3>phone<wbr>Numbers</h3>
+					<div class="tsd-signature tsd-kind-icon">phone<wbr>Numbers<span class="tsd-signature-symbol">:</span> <a href="jcafe.collection.html" class="tsd-signature-type">Collection</a><span class="tsd-signature-symbol">&lt;</span><a href="jcafe.phonenumber.html" class="tsd-signature-type">PhoneNumber</a><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#phonenumbers">phoneNumbers</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1200</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Sorted by type.</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="status" class="tsd-anchor"></a>
+					<h3>status</h3>
+					<div class="tsd-signature tsd-kind-icon">status<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Status &amp; { reset(): Promise&lt;void&gt;; }</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#status">status</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1205</li>
+							<li>Defined in s4b.sdk.d.ts:2121</li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Performing a reset on this tells the server to pick the most
+							appropriate value for status</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+					<a name="title" class="tsd-anchor"></a>
+					<h3>title</h3>
+					<div class="tsd-signature tsd-kind-icon">title<span class="tsd-signature-symbol">:</span> <a href="jcafe.property.html" class="tsd-signature-type">Property</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<p>Inherited from <a href="jcafe.person.html">Person</a>.<a href="jcafe.person.html#title">title</a></p>
+						<ul>
+							<li>Defined in s4b.sdk.d.ts:1187</li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="../globals.html"><em>Globals</em></a>
+					</li>
+					<li class="current tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/jcafe.html">j<wbr>Cafe</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="jcafe.meperson.html" class="tsd-kind-icon">Me<wbr>Person</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#activity" class="tsd-kind-icon">activity</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#avatarurl" class="tsd-kind-icon">avatar<wbr>Url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#capabilities" class="tsd-kind-icon">capabilities</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#company" class="tsd-kind-icon">company</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#department" class="tsd-kind-icon">department</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#displayname" class="tsd-kind-icon">display<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jcafe.meperson.html#email" class="tsd-kind-icon">email</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#emails" class="tsd-kind-icon">emails</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#endpointtype" class="tsd-kind-icon">endpoint<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#id" class="tsd-kind-icon">id</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#lastseenat" class="tsd-kind-icon">last<wbr>Seen<wbr>At</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#location" class="tsd-kind-icon">location</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#note" class="tsd-kind-icon">note</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#office" class="tsd-kind-icon">office</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#phonenumbers" class="tsd-kind-icon">phone<wbr>Numbers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#status" class="tsd-kind-icon">status</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-inherited">
+								<a href="jcafe.meperson.html#title" class="tsd-kind-icon">title</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>

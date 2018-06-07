@@ -1,0 +1,74 @@
+<script id="task-template" type="x-jquery-tmpl">
+    <li><a href=#${id}>${text}</a></li>
+</script>
+
+<script id="code-template" type="x-jquery-tmpl">
+    <a href="#">Top</a>
+    {{if isModule !== undefined && isModule }}
+    <h2 class="code">Module - Click to Expand</h2>
+    {{else}}
+    <h2 class="code">Code - Click to Expand</h2>
+    {{/if}}
+    <div>
+        <div class="codeHeader">
+            <a href=${file}>${file}</a>
+        </div>
+        <div class="codeBody">
+            <pre></pre>
+        </div>
+    </div>
+</script>
+
+<script id="contact-template" type="x-jquery-tmpl">
+    <div class="contact">
+        {{if image !== undefined && image !== null}}
+        <img src=${image} width="96" height="96"></img>
+        {{/if}}
+        <div>
+            <h3>${name}</h3>
+            <h4>Email: ${email}</h4>
+        </div>
+    </div>
+</script>
+
+<script id="contact-mini-template" type="x-jquery-tmpl">
+    <div class="contact">
+        {{if image !== undefined && image !== null}}
+        <img src=${image} width="96" height="96"></img>
+        {{/if}}
+    </div>
+</script>
+
+<script id="contact-presence-template" type="x-jquery-tmpl">
+    <li><a id=${type}${id}>${name}</a></li>
+</script>
+
+<script id="invitation-template" type="x-jquery-tmpl">
+    <div class="contact">
+        {{if image !== undefined && image !== null}}
+        <img src=${image} width="96" height="96"></img>
+        {{/if}}
+        <div>
+            <h3>${name}</h3>
+            {{if message !== undefined && message !== null}}
+            <h4>"${message}"</h4>
+            {{/if}}
+        </div>
+    </div>
+</script>
+
+<script id="message-template" type="x-jquery-tmpl">
+    <li>
+        <div class="message">
+            <div class="messageHeader">
+                {{if name !== undefined && name !== null}}
+                <h4>${name}</h4>
+                {{/if}}
+                <h4>${timeStamp}</h4>
+            </div>
+            <ul class="messageBody">
+                <li><h4>${message}</h4></li>
+            </ul>
+        </div>
+    </li>
+</script>

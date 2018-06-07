@@ -1,0 +1,20 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Batch</h1>
+<p>The Batch library allows the grouping of multiple requests into a single batch request send by the Transport. This enables the compacting of many cross-domain calls into a single request and response lowering overall number of remote calls. There is a risk of increasing response latency as the server will not send a response until every operation in the batch completes.</p>
+
+<h2>Dependencies</h2>
+<ul>
+  <li>GeneralHelper.js</li>
+  <li>Cache.js</li>
+  <li>Transport.js</li>
+</ul>
+
+<h2>Usage</h2>
+<p>In order to construct the Batch library a Cache, a Transport, and a timer limit used to control processing are required. The batch library provides methods for queuing requests and flushing the queue even when not full. Queuing requests is accomplished by calling queueRequest(...) supplying a request object containing: URL, HTTP verb, data, accept type, and callback (to be executed when batch is completed). Processing outstanding requests is accomplished by calling processBatch() or once a request has been queued and the timer limit has expired (default: 3 seconds). Additionally, requests can be queued up until the 21st request at which point the current 20 requests will be processed and sent in a request.</p>
+<div id="codeSnippet1"></div>
+<div id="module"></div>
+<script type="text/javascript">
+  window.site.codifyElement($("#codeSnippet1"), "samples/Javascript/BatchUsage.js");
+  window.site.codifyElement($("#module"), "scripts/Batch.js", true);
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

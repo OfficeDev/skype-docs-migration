@@ -1,0 +1,75 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/events?ack=2\\u0026key=1393347000%7Esip%3Amonitoringaudio%400mcorp2cloudperf.onmicrosoft.com%7E869ce4f6-0076-483a-a7c1-968f6b935afe"
+    },
+    "next": {
+      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/events?ack=3\\u0026key=1393347000%7Esip%3Amonitoringaudio%400mcorp2cloudperf.onmicrosoft.com%7E869ce4f6-0076-483a-a7c1-968f6b935afe"
+    }
+  },
+  "sender": [
+    {
+      "rel": "ms:rtc:saas:communication",
+      "href": "/platformservice/v1/applications/1393347000/communication?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com",
+      "events": [
+        {
+          "link": {
+            "rel": "ms:rtc:saas:conversation",
+            "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+          },
+          "_embedded": {
+            "ms:rtc:saas:conversation": {
+              "state": "Conferenced",
+              "importance": "Normal",
+              "threadId": "69f8e66f684b4bbf9649965634a6a2d5",
+              "subject": "helpcustomermeeting",
+              "activeModalities": [],
+              "onlineMeetingLobbyStatus": "None",
+              "_links": {
+                "self": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:applicationSharing": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/applicationSharing?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:audioVideo": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/audioVideo?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:dataCollaboration": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/dataCollaboration?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:messaging": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/messaging?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:enableAudienceMuteLock": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/enableAudienceMuteLock?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:leaders": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/participants?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com&filter=Leaders"
+                },
+                "ms:rtc:saas:attendees": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/participants?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com&filter=Attendees"
+                },
+                "ms:rtc:saas:lobby": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/participants?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com&filter=Lobby"
+                },
+                "ms:rtc:saas:participants": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/participants?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:enableConversationExtension": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/enableConversationExtension?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:enableBroadcastingExtension": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe/enableBroadcastingExtension?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                }
+              },
+              "rel": "ms:rtc:saas:conversation"
+            }
+          },
+          "type": "updated"
+        }
+      ]
+    }
+  ],
+  "baseuri": "https://webpoolbl20r04.infra.lync.com"
+}

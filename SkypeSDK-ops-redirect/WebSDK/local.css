@@ -1,0 +1,31 @@
+/* These styles are intended for local hosting only  */
+html, body {
+  margin: 0;
+  padding: 0 2%;
+  height: 98%;
+  font-family: "Segoe UI Light", "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+  font-weight: lighter;
+}
+
+.center-content > .notification3 > .notification3-message {
+  min-height: 1.3em;
+}
+
+pre {
+    background-color: #eee;
+    font-size: 14px;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    border: 0;
+    white-space: pre-wrap;
+}
+
+/* header styles */
+.header {
+  margin: 2% 0;
+}
+
+.header img {
+  width: 30%;
+}
+/* end of header styles */

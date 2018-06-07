@@ -1,0 +1,87 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Presence Subscription</h1>
+<p>Presence Subscription is the ability to receive status notifications from groups or ad-hoc groups.  These notifications include contact presence, note, and supported media.  When subscribed to a contact if any of the aforementioned properties change an event will be dispatched with links to each updated resource.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>Cache.js</li>
+    <li>Transport.js</li>
+    <li>Events.js</li>
+    <li>OperationResource.js</li>
+</ul>
+
+<h2>Tasks</h2>
+<ul id="tasks">
+</ul>
+
+<h2 class="task">Subscribing to a Group</h2>
+<p>Subscribing to a group can seem like a complex task, but it can be broken down into a few parts: requesting groups (for the purpose of group specific href's), starting and starting an operation to track presence data, and sending a subscription request.  On page load the task has already sent out a request for the current user's contact groups and fills the select element with valid entries.  What is really important about each item is that each represents a separate contact group and thus has a separate contact group subscription href.  The operation in this task is interested in updated resources which could include presence, note, or supported media resources and in this case it is interested in only presence updates.  Subscribing to the contact group results by making a batch request for the selected contact group and a presence subscription to that group.  The result from the contact group is a series of contact hrefs for each member of the group.  The result from the presence subscription is data related to the newly created subscription.  The contact hrefs will be used to build a list of contact's name and stylized presence.  As the presence status of any of the listed contacts changes the color indicator adjacent to their name.  The initial expiration limit on the subscription can be controlled via a query parameter on the group subscription: "&SubscriptionDuration=11".  This value can range from 10-30 and is measured in minutes.</p>
+<div class="controls">
+    <select id="groups"></select>
+</div>
+<div class="controls">
+    <a id="subscribeGroup">Group Subscribe</a>
+</div>
+<div>
+    <ul id="groupSubscribed"></ul>
+</div>
+<br/>
+<div id="codeSnippet1"></div>
+
+<h2 class="task">Extending Group Subscription</h2>
+<p>Extending a group subscription is a trival task, but it first requires that a user is subscribed to a group and has the original subscription link.  This subscription link will be used to with a post request to extend the current subscription to the group.</p>
+<div class="controls">
+    <a id="extendGroup" class="idleAnchor">Extend Subscription</a>
+</div>
+<div id="codeSnippet3"></div>
+
+<h2 class="task">Deleting Group Subscription</h2>
+<p>Deleting a group subscription is a trival task, but it first requires that a user is subscribed to a group and has the subscription link.  This subscription link will be used to with a delete request to end the current subscription to the group.</p>
+<div class="controls">
+    <a id="deleteGroup" class="idleAnchor">Delete Subscription</a>
+</div>
+<div id="codeSnippet4"></div>
+
+<h2 class="task">Subscribing to an Ad-Hoc Group</h2>
+<p>Subscribing to an ad-hoc group similar to group subscription requires starting an operation and sending a subscription request with the subscription data containing contact sip uri(s) instead of a group.  On page load the task has already sent out a request for the current contact list and fills the select element with valid entries.  Each entry contains id, name, sip, and current presence status (at time of the original request).  The operation in this task is interested in updated resources which could include presence, note, or supported media resources and in this case it is interested in only presence updates.  The presence subscription request will include the sips from the selected contacts and return a sbuscription link which can be used to prematurely end the subscription.  As the presence status of any of the listed contacts changes the color indicator adjacent to their name.  The initial expiration limit on the subscription can be controlled via a query parameter on the group subscription: "&SubscriptionDuration=11".  This value can range from 10-30 and is measured in minutes.</p>
+<div class="controls">
+    <select id="adHocContacts" multiple="multiple"></select>
+</div>
+<div class="controls">
+    <a id="subscribeAdhoc">Ad-hoc Subscribe</a>
+</div>
+<div>
+    <ul id="adHocSubscribed"></ul>
+</div>
+<br/>
+<div id="codeSnippet5"></div>
+
+<h2 class="task">Extending Ad-Hoc Subscription</h2>
+<p>Extending a ad-hoc subscription is a trival task, but it first requires that a user is subscribed to a ad-hoc and has the original subscription link.  This subscription link will be used to with a post request to extend the current subscription to the ad-hoc.</p>
+<div class="controls">
+    <a id="extendAdHoc" class="idleAnchor">Extend Subscription</a>
+</div>
+<div id="codeSnippet7"></div>
+
+<h2 class="task">Deleting Ad-Hoc Subscription</h2>
+<p>Deleting a ad-hoc subscription is a trival task, but it first requires that a user is subscribed to a ad-hoc and has the subscription link.  This subscription link will be used to with a delete request to end the current subscription to the ad-hoc.</p>
+<div class="controls">
+    <a id="deleteAdHoc" class="idleAnchor">Delete Subscription</a>
+</div>
+<div id="codeSnippet8"></div>
+
+<script type="text/javascript" src="samples/javascript/GroupSubscription.js"></script>
+<script type="text/javascript" src="samples/javascript/ExtendGroupSubscription.js"></script>
+<script type="text/javascript" src="samples/javascript/DeleteGroupSubscription.js"></script>
+<script type="text/javascript" src="samples/javascript/AdHocSubscription.js"></script>
+<script type="text/javascript" src="samples/javascript/ExtendAdHocSubscription.js"></script>
+<script type="text/javascript" src="samples/javascript/DeleteAdHocSubscription.js"></script>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/javascript/GroupSubscription.js");
+    window.site.codifyElement($("#codeSnippet3"), "samples/javascript/ExtendGroupSubscription.js");
+    window.site.codifyElement($("#codeSnippet4"), "samples/javascript/DeleteGroupSubscription.js");
+    window.site.codifyElement($("#codeSnippet5"), "samples/javascript/AdHocSubscription.js");
+    window.site.codifyElement($("#codeSnippet7"), "samples/javascript/ExtendAdHocSubscription.js");
+    window.site.codifyElement($("#codeSnippet8"), "samples/javascript/DeleteAdHocSubscription.js");
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

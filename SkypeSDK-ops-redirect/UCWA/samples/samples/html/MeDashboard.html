@@ -1,0 +1,101 @@
+<!--Third party scripts or code, linked to or referenced from this web site, are licensed to you by the third parties that own such code, not by Microsoft, see ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx.-->
+<h1>Me Dashboard</h1>
+<p>Me Dashboard is a collection of resources specific to the logged in user.  These resources include Presence, Note, and Photo among others.  In the following tasks actions and code will be presented allowing testing of these resources.</p>
+
+<h2>Dependencies</h2>
+<ul>
+    <li>Cache.js</li>
+    <li>Transport.js</li>
+    <li>Events.js</li>
+    <li>OperationResource.js</li>
+</ul>
+
+<h2>Tasks</h2>
+<ul id="tasks">
+</ul>
+
+<h2 class="task">Get Presence</h2>
+<p>Getting the Presence of the logged in user is a trivial task: use the Transport library to make a cross-domain request using a link stored inside the Cache library and provide a callback to handle the result.  Depending on the result (200), the span adjacent to "Current Status:" will change to the user's current presence.  This task expands when using the OperationResource to listen to event channel data for presence and is controlled via Start/Stop Operation buttons. When active any changes made by set/reset presence will be shown.</p>
+<div class="controls">
+    <a id="getPresence" class="anchorButton">Get Presence</a>
+    <h3>Current Status: <span id="presence"></span></h3>
+</div>
+<div class="controls">
+    <a id="startOperation1">Start</a>
+    <a id="stopOperation1" class="idleAnchor">Stop</a>
+</div>
+<div id="codeSnippet1"></div>
+
+<h2 class="task">Set Presence</h2>
+<p>Setting the Presence of the logged in user is a trivial task: use the Transport library to make a cross-domain request using a link stored inside the Cache library and provide a callback to handle the result.  Depending on the result (204), an alert will display saying that user presence has changed.  It should be noted that user presence changed in this way would be seen in an subsequent event data and would contain new presence value.  As this task does not make use of events the new presence can be seen by returning to the task "Get Presence" and executing the action.</p>
+<div class="controls">
+    <a id="setPresence">Set Presence</a>
+    <select data-enterBinding="setPresence" name="select" id="presenceValue">
+        <option value="Online">Online</option>
+        <option value="Busy">Busy</option>
+        <option value="DoNotDisturb">Do Not Disturb</option>
+        <option Value="BeRightBack">Be Right Back</option>
+        <option value="Away">Away</option>
+    </select>
+</div>
+<div id="codeSnippet2"></div>
+
+<h2 class="task">Reset Presence</h2>
+<p>Reseting the Presence of the logged in user is a trivial task: use the Transport library to make a cross-domain request using a link stored inside the Cache library and provide a callback to handle the result.  Depending on the result (204), an alert will display saying that user presence has reset.  It should be noted that user presence changed in this way would be seen in an subsequent event data and would contain new presence value.  As this task does not make use of events the new presence can be seen by returning to the task "Get Presence" and executing the action.</p>
+<div class="controls">
+    <a id="resetPresence">Reset Presence</a>
+</div>
+<div id="codeSnippet3"></div>
+
+<h2 class="task">Get Note</h2>
+<p>Getting the Note of the logged in user is a trivial task: use the Transport library to make a cross-domain request using a link stored inside the Cache library and provide a callback to handle the result.  Depending on the result (200), the span adjacent to "Current Note:" will change to the user's current note.  This task expands when using the OperationResource to listen to event channel data for note and is controlled via Start/Stop Operation buttons. When active any changes made by set/reset note will be shown</p>
+<div class="controls">
+    <a id="getNote">Get Note</a>
+    <h3>Current Note: <span id="note"></span></h3>
+</div>
+<div class="controls">
+    <a id="startOperation2">Start</a>
+    <a id="stopOperation2" class="idleAnchor">Stop</a>
+</div>
+<div id="codeSnippet4"></div>
+
+<h2 class="task">Set Note</h2>
+<p>Setting the Note of the logged in user is a trivial task: use the Transport library to make a cross-domain request using a link stored inside the Cache library and provide a callback to handle the result.  Depending on the result (204), an alert will display saying that user note has changed.  It should be noted that user note changed in this way would be seen in an subsequent event data and would contain new note value.  As this task does not make use of events the new note can be seen by returning to the task "Get Note" and executing the action.</p>
+<div class="controls">
+    <a id="setNote">Set Note</a>
+    <input data-enterBinding="setNote" id="noteValue" />
+</div>
+<div id="codeSnippet5"></div>
+
+<h2 class="task">Reset Note</h2>
+<p>Reseting the Note of the logged in user is a trivial task: use the Transport library to make a cross-domain request using a link stored inside the Cache library and provide a callback to handle the result.  Depending on the result (204), an alert will display saying that user note has reset.  It should be noted that user note changed in this way would be seen in an subsequent event data and would contain new note value.  As this task does not make use of events the new note can be seen by returning to the task "Get Note" and executing the action.</p>
+<div class="controls">
+    <a id="resetNote">Reset Note</a>
+</div>
+<div id="codeSnippet6"></div>
+
+<h2 class="task">Get Photo</h2>
+<p>Getting photo is a trivial task as it just requires access to the Cache to search for the embedded resource "me" and find the "photo" link.  With this it is possible to put the user's image into the DOM.</p>
+<div class="controls">
+    <a id="getPhoto">Get Photo</a>
+</div>
+<div id="mePhoto"></div>
+<div id="codeSnippet7"></div>
+
+<script type="text/javascript" src="samples/javascript/GetPresence.js"></script>
+<script type="text/javascript" src="samples/javascript/SetPresence.js"></script>
+<script type="text/javascript" src="samples/javascript/ResetPresence.js"></script>
+<script type="text/javascript" src="samples/javascript/GetNote.js"></script>
+<script type="text/javascript" src="samples/javascript/SetNote.js"></script>
+<script type="text/javascript" src="samples/javascript/ResetNote.js"></script>
+<script type="text/javascript" src="samples/javascript/GetPhoto.js"></script>
+<script type="text/javascript">
+    window.site.codifyElement($("#codeSnippet1"), "samples/javascript/GetPresence.js");
+    window.site.codifyElement($("#codeSnippet2"), "samples/javascript/SetPresence.js");
+    window.site.codifyElement($("#codeSnippet3"), "samples/javascript/ResetPresence.js");
+    window.site.codifyElement($("#codeSnippet4"), "samples/javascript/GetNote.js");
+    window.site.codifyElement($("#codeSnippet5"), "samples/javascript/SetNote.js");
+    window.site.codifyElement($("#codeSnippet6"), "samples/javascript/ResetNote.js");
+    window.site.codifyElement($("#codeSnippet7"), "samples/javascript/GetPhoto.js");
+</script>
+<center>&copy; 2014 Microsoft Corporation. All rights reserved. By using or providing feedback on these materials, you agree to the attached license agreement.</center>

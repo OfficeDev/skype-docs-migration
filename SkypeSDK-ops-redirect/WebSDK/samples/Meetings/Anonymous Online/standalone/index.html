@@ -1,0 +1,49 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="css/local.css">
+</head>
+
+<body>
+	<div class="controls">
+		<h1>WebRTC - Anonymous Join Sample</h1>
+
+		<div class="step0 step">
+			Initializing Skype...
+		</div>
+		<form class="step1 step" name="step1">
+			<label>
+				Online meeting url: <input name="meetingUrl">
+				</label>
+			<input type="submit" value="Get Token">
+		</form>
+		<form class="step2 step" name="step2">
+			<strong>Auth token aquired!</strong>
+			<label>
+			Guest name: <input name="name">
+			</label>
+			<input type="submit" value="Join meeting with A/V">
+		</form>
+		<form class="step3 step" name="step3">
+			<input type="submit" value="End meeting">
+		</form>
+	</div>
+	<div class="content">
+		<div class="participant self">
+			<h2>Self participant</h2>
+			<div class="video"></div>
+			<div class="displayName"><strong>Name:</strong> <span class="detail"></span></div>
+		</div>
+
+		<div class="participant remote">
+			<h2>Remote participant</h2>
+			<div class="video"></div>
+			<div class="displayName"><strong>Name:</strong> <span class="detail"></span></div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="//swx.cdn.skype.com/shared/v/1.2.30/SkypeBootstrap.min.js"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>

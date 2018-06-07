@@ -1,0 +1,44 @@
+<div class="step">
+    <div class="mui-container-fluid">
+        <div class="mui-row">
+            <div class="mui-col-md-8">
+                <zero-md file="">
+                    <div class="md-html"></div>
+                </zero-md>
+            </div>
+            <div class="mui-col-md-4">
+                <div class="mui--text-display2">Preview</div>
+                <br/>
+                <div class="mui-panel mui--z3">
+                    <div id="step1" style="display:block">
+                        <div class="mui-textfield">
+                            <input type="text" class="uri" placeholder="sip:BL20R02meet1760@noammeetings.lync.com;gruu;opaque=app:conf:focus:id:JHBSIQBT" data-enter-bind="call">
+                            <label>Conference URI</label>
+                        </div>
+                        <button class="mui-btn mui-btn--raised mui-btn--primary call">Join Meeting with AV</button>
+                    </div>
+                    <div id="step2" style="display:none">
+                        <div class="mui--text-subhead selfvideo" id="selfvideo" style="display:none">
+                            <b> Self Video </b>
+							<div class="selfVideoContainer"></div>
+                            <a class="selfIcon js-toggleSelfAudio"><span class="fa fa-microphone"></span> <span class="text">Turn Off</span></a>
+							<a class="selfIcon js-toggleSelfVideo"><span class="fa fa-video-camera"></span> <span class="text">Turn Off</span></a>
+							<a class="selfIcon js-toggleSelfHold"><span class="fa fa-pause"></span> <span class="text">Hold</span></a>
+						</div>
+                        <div class="mui--text-subhead" id="remotevideo" style="display:none"> <b> Remote Video </b> </div>
+                        <div class="remoteVideoContainers" id="remoteVideoContainers"></div>
+                        <button class="mui-btn mui-btn--raised mui-btn--danger end">End Conversation</button>
+                    </div>
+                    <div id="step3" class="step3" style="display: none">
+                        <button class="mui-btn mui-btn--raised mui-btn--accent restart">Restart Sample</button>
+                    </div>
+                    <div class="mui-divider"></div>
+                    <div class="notification-bar">
+                        <br/>
+                        <div class="mui--text-subhead"><b>Events Timeline</b></div> <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

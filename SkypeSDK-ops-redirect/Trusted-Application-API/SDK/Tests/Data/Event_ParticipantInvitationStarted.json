@@ -1,0 +1,43 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/events?ack=4\\u0026key=1393347000%7Esip%3Amonitoringhelpdesk%400mcorp2cloudperf.onmicrosoft.com%7E869ce4f6-0076-483a-a7c1-968f6b935afe"
+    },
+    "next": {
+      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/events?ack=5\\u0026key=1393347000%7Esip%3Amonitoringhelpdesk%400mcorp2cloudperf.onmicrosoft.com%7E869ce4f6-0076-483a-a7c1-968f6b935afe"
+    }
+  },
+  "sender": [
+    {
+      "rel": "ms:rtc:saas:communication",
+      "href": "/platformservice/v1/applications/1393347000/communication?endpointId=sip:monitoringhelpdesk@0mcorp2cloudperf.onmicrosoft.com",
+      "events": [
+        {
+          "link": {
+            "rel": "ms:rtc:saas:participantInvitation",
+            "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/participantInvitations/5d89df9f-6ef1-4c0f-accb-9b0c57ee9ad1?endpointId=sip:monitoringhelpdesk@0mcorp2cloudperf.onmicrosoft.com"
+          },
+          "_embedded": {
+            "ms:rtc:saas:participantInvitation": {
+              "direction": "Outgoing",
+              "state": "Connecting",
+              "operationId": "49541af3-6866-4098-b6d9-b3ecd7784346",
+              "importance": "Normal",
+              "_links": {
+                "self": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/participantInvitations/5d89df9f-6ef1-4c0f-accb-9b0c57ee9ad1?endpointId=sip:monitoringhelpdesk@0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:conversation": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/869ce4f6-0076-483a-a7c1-968f6b935afe?endpointId=sip:monitoringhelpdesk@0mcorp2cloudperf.onmicrosoft.com"
+                }
+              },
+              "rel": "ms:rtc:saas:participantInvitation"
+            }
+          },
+          "type": "started"
+        }
+      ]
+    }
+  ],
+  "baseuri": "https://webpoolbl20r04.infra.lync.com"
+}

@@ -1,0 +1,44 @@
+﻿{
+  "_links": {
+    "self": {
+      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/events?ack=1\\u0026key=1393347000%7Esip%3Amonitoringaudio%400mcorp2cloudperf.onmicrosoft.com%7E40ac1ea0-5468-4a8c-a984-0100ff17d4a8"
+    },
+    "next": {
+      "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/events?ack=2\\u0026key=1393347000%7Esip%3Amonitoringaudio%400mcorp2cloudperf.onmicrosoft.com%7E40ac1ea0-5468-4a8c-a984-0100ff17d4a8"
+    }
+  },
+  "sender": [
+    {
+      "rel": "ms:rtc:saas:communication",
+      "href": "/platformservice/v1/applications/1393347000/communication?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com",
+      "events": [
+        {
+          "link": {
+            "rel": "ms:rtc:saas:onlineMeetingInvitation",
+            "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/onlineMeetingInvitations/6671f490-6792-456f-857a-accb2063eb47?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+          },
+          "_embedded": {
+            "ms:rtc:saas:onlineMeetingInvitation": {
+              "onlineMeetingUri": "sip:BL20R04meet48@noammeetings.lync.com;gruu;opaque=app:conf:focus:id:8C1RSJYA",
+              "direction": "Outgoing",
+              "state": "Connecting",
+              "operationId": "49541af3-6866-4098-b6d9-b3ecd7784346",
+              "importance": "Normal",
+              "_links": {
+                "self": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/onlineMeetingInvitations/6671f490-6792-456f-857a-accb2063eb47?endpointId=sip:monitoringaudio0mcorp2cloudperf.onmicrosoft.com"
+                },
+                "ms:rtc:saas:conversation": {
+                  "href": "/platformservice/tgt-8c81281c925a5c2ea02ec14ac1b492c6/v1/applications/1393347000/communication/conversations/40ac1ea0-5468-4a8c-a984-0100ff17d4a8?endpointId=sip:monitoringaudio@0mcorp2cloudperf.onmicrosoft.com"
+                }
+              },
+              "rel": "ms:rtc:saas:onlineMeetingInvitation"
+            }
+          },
+          "type": "started"
+        }
+      ]
+    }
+  ],
+  "baseuri": "https://webpoolbl20r04.infra.lync.com"
+}
