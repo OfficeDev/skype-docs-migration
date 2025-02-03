@@ -6,7 +6,7 @@ Microsoft takes the security of our software products and services seriously, wh
 
 If you believe you have found a security vulnerability in any Microsoft-owned repository that meets [Microsoft's definition of a security vulnerability](https://aka.ms/opensource/security/definition), please report it to us as described below.
 
-## Reporting Security Issues
+## Report Security Issues
 
 **Please do not report security vulnerabilities through public GitHub issues.**
 
